@@ -3,7 +3,7 @@ Projetos realizados para por em prática os conceitos do react js.
 
 ## Tecnologias
 Os projetos foram desenvolvidos com as seguintes tecnologias:
-* React; MongoDB; Strapi - [landing-pages-strapi-mongodb$]
+* React; MongoDB; Strapi - [landing-pages-strapi-mongodb]
 
 ## Autor
 
