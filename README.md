@@ -1,5 +1,5 @@
 # React project
-Projetos realizados para por em prática os conceitos do react js.
+Projetos realizados para por em prática os conceitos do react js usando uma api pronta do mongodb atlas.
 
 ## Tecnologias
 Os projetos foram desenvolvidos com as seguintes tecnologias:
