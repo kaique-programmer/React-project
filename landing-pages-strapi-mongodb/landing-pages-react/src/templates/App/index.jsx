@@ -1,12 +1,12 @@
 import React from 'react';
-import * as styled from 'styled-components';
+import * as Styled from './styles';
 
 function Home() {
   return (
     <div>
-      <styled.Container background="gray">
+      <Styled.Wrapper background="gray">
         <h1>Hello</h1>
-      </styled.Container>
+      </Styled.Wrapper>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
-  ${({ props }) => css`
-    background: ${props.background};
+export const Wrapper = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.secondaryBackground};
   `}
 `;
