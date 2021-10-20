@@ -1,5 +1,6 @@
 # React project
-Projetos realizados para por em prática os conceitos do react js.
+Projetos realizados para por em prática os conceitos do react js abordando os principais tópicos da biblioteca como: ciclo de vida de um estado; componentes;
+propriedades etc.
 
 ## Tecnologias
 Os projetos foram desenvolvidos com as seguintes tecnologias:
