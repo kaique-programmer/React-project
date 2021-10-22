@@ -1,11 +1,12 @@
 import React from 'react';
+import Heading from '../../components/Heading';
 import * as Styled from './styles';
 
 function Home() {
   return (
     <div>
       <Styled.Wrapper>
-        <h1>Hello</h1>
+        <Heading>The text than want</Heading>
       </Styled.Wrapper>
     </div>
   );
