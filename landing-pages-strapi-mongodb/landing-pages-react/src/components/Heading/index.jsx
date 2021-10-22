@@ -1,5 +1,5 @@
 import React from 'react';
-import Props from 'props-types';
+import Props from 'prop-types';
 import * as Styled from './styles';
 
 const Heading = ({ children, light = false }) => {
