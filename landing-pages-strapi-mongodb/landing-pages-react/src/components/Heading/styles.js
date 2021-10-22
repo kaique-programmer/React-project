@@ -2,6 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Title = styled.h1`
   ${({ theme }) => css`
-    color: ${theme.colors.primaryBackground}
+    color: ${light ? theme.colors.white : theme.colors.primaryBackground }
   `}
 `;
