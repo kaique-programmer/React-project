@@ -5,7 +5,7 @@ const theme = {
     white: '#FFF',
     mediumGray: '#DDD',
   },
-  fonts: {
+  font: {
     family: {
       default: "'Opens Sans', sans-serif",
       secondary: "'Montserrat', sans-serif",
