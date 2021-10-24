@@ -11,8 +11,8 @@ const theme = {
       secondary: "'Montserrat', sans-serif",
     },
     sizes: {
-      xsmall: '8rem',
       small: '1.6rem',
+      xsmall: '8rem',
       medium: '2.4rem',
       large: '3.2rem',
       xlarge: '4.0rem',
