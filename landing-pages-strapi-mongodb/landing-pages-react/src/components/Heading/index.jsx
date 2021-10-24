@@ -6,7 +6,7 @@ const Heading = ({
   children,
   colorDark = true,
   as = 'h1',
-  size = 'big',
+  size = 'huge',
   uppercase = false
 }) => {
   return  (
@@ -23,10 +23,10 @@ const Heading = ({
 
 Heading.propTypes = {
   children: Props.node.isRequired,
-  colorDark: Props.bool.isRequired,
-  as: Props.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']).isRequired,
-  size: Props.oneOf(['small', 'medium', 'big', 'huge']).isRequired,
-  uppercase: Props.bool.isRequired,
+  colorDark: Props.bool,
+  as: Props.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
+  size: Props.oneOf(['small', 'medium', 'big', 'huge']),
+  uppercase: Props.bool,
 }
 
 export default Heading;
