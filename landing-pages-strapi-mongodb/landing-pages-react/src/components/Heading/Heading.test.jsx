@@ -1,6 +1,5 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import Heading from '.';
 import { renderTheme } from '../../styles/render-theme';
 import theme from '../../styles/theme';
@@ -32,6 +31,33 @@ describe('<Heading />', () => {
 
     expect(heading).toHaveStyle({
       'font-size': theme.font.sizes.medium,
+    });
+  });
+
+  it('should render correct heading sizes', () => {
+    renderTheme(<Heading size="medium">text</Heading>);
+    const heading = screen.getByRole('heading', { name: 'text' });
+
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.large,
+    });
+  });
+
+  it('should render correct heading sizes', () => {
+    renderTheme(<Heading size="large">text</Heading>);
+    const heading = screen.getByRole('heading', { name: 'text' });
+
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.xlarge,
+    });
+  });
+
+  it('should render correct heading sizes', () => {
+    renderTheme(<Heading size="huge">text</Heading>);
+    const heading = screen.getByRole('heading', { name: 'text' });
+
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.xhuge,
     });
   });
 
