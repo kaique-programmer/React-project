@@ -5,7 +5,7 @@ import * as Styled from './styles';
 const dummy = ({ children }) => {
   return (
     <Styled.Container>
-      <h1>dummy</h1>
+      <h1>{children}</h1>
     </Styled.Container>
   );
 };
