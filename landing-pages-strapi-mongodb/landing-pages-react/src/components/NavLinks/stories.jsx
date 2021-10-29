@@ -8,10 +8,11 @@ export default {
   args: {
     links: links,
   },
-  argsTypes: {
+  argTypes: {
     links: { type: '' },
   },
 };
+
 export const Template = (args) => {
   return (
     <div>
