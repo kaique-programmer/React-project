@@ -3,22 +3,22 @@ import Props from 'prop-types';
 import MenuLink from '../MenuLink'
 import * as Styled from './styles';
 
-export const NavLink = ({ links = [] }) => {
+export const NavLinks = ({ links = [] }) => {
   return (
     <Styled.Container>
-      {links.map(link => {
-        <MenuLink key={link.link} {...link}/>
+      {links.map((link) => {
+        <MenuLink key={link.link} {...link} />
       })}
     </Styled.Container>
   );
 };
 
-NavLink.propTypes = {
+NavLinks.propTypes = {
   links: Props.arrayOf(
     Props.shape({
-      children: Props.node.isRequired,
+      children: Props.string.isRequired,
       link: Props.string.isRequired,
       newTab: Props.bool,
     }),
-  ).isRequired
+  ),
 };
