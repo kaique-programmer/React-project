@@ -5,7 +5,7 @@ import * as Styled from './styles';
 
 export const NavLinks = ({ links = [] }) => {
   return (
-    <Styled.Container>
+    <Styled.Container aria-label="Main Menu">
       {links.map((link) => (
         <MenuLink key={link.link} {...link} />
       ))}
