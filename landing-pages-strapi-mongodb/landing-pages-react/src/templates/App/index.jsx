@@ -1,13 +1,12 @@
 import React from 'react';
-import Heading from '../../components/Heading';
-import { NavLinks } from '../../components/NavLinks';
+import Menu from '../../components/Menu';
 import * as Styled from './styles';
 
 function Home() {
   return (
     <div>
       <Styled.Wrapper>
-        <NavLinks />
+        <Menu />
       </Styled.Wrapper>
     </div>
   );

@@ -3,9 +3,9 @@ import Props from 'prop-types';
 import { useState } from 'react';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
-import SectionContainer from '../SectionContainer';
-import LogoLink from '../LogoLink';
-import NavLinks from '../NavLinks';
+import {SectionContainer} from '../SectionContainer';
+import {LogoLink} from '../LogoLink';
+import {NavLinks} from '../NavLinks';
 import * as Styled from './styles';
 
 const Menu = ({ links = [], logoData }) => {
@@ -18,7 +18,7 @@ const Menu = ({ links = [], logoData }) => {
         onClick={() => setVisible(true)}
         aria-label="Open/Close menu"
       >
-        { visible ? (
+        {visible ? (
           <CloseIcon aria-label="Close menu" />
         ) : (
           <MenuIcon aria-label="Open menu" />
@@ -38,7 +38,7 @@ const Menu = ({ links = [], logoData }) => {
 
 Menu.propTypes = {
   ...NavLinks.propTypes,
-  logoData: Props.shape(LogoLink.propTypes).isRequired,
+  logoData: Props.shape(LogoLink.propTypes),
 };
 
 export default Menu;

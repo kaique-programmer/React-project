@@ -3,7 +3,7 @@ import Props from 'prop-types';
 import * as Styled from './styles';
 import Heading from '../Heading';
 
-const LogoLink = ({ text, srcImage = '', link }) => {
+export const LogoLink = ({ text, srcImage = '', link }) => {
   return (
     <Heading size="small" uppercase>
       <Styled.Container href={link}>
@@ -15,9 +15,7 @@ const LogoLink = ({ text, srcImage = '', link }) => {
 };
 
 LogoLink.propTypes = {
-  text: Props.string.isRequired,
+  text: Props.string,
   srcImage: Props.string,
-  link: Props.string.isRequired,
+  link: Props.string,
 };
-
-export default LogoLink;

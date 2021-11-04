@@ -2,7 +2,8 @@ import React from 'react';
 import Props from 'prop-types';
 import * as Styled from './styles';
 
-const SectionBackground = ({ children }) => {
+
+export const SectionContainer = ({ children }) => {
   return (
     <Styled.Container>
       {children}
@@ -10,8 +11,6 @@ const SectionBackground = ({ children }) => {
   );
 };
 
-SectionBackground.propTypes = {
+SectionContainer.propTypes = {
   children: Props.node.isRequired,
 };
-
-export default SectionBackground;
