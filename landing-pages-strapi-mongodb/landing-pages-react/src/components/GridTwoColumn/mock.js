@@ -4,5 +4,5 @@ export default {
            Ipsum nostrum accusamus id alias quos! Reiciendis a rerum,
            esse exercitationem, animi nulla nobis natus id et earum obcaecati asperiores!
            Inventore, similique.`,
-  srcImage: 'assets/images/logo.svg',
+  srcImage: 'assets/images/javascript.svg',
 }
