@@ -15,7 +15,7 @@ export const LogoLink = ({ text, srcImage = '', link }) => {
 };
 
 LogoLink.propTypes = {
-  text: Props.string,
+  text: Props.string.isRequired,
   srcImage: Props.string,
-  link: Props.string,
+  link: Props.string.isRequired,
 };
