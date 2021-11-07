@@ -1,7 +1,7 @@
 import React from 'react';
 import Props from 'prop-types';
 import * as Styled from './styles';
-import SectionContainer from '../SectionContainer';
+import {SectionContainer} from '../SectionContainer';
 
 export const SectionBackground = ({ children, background = false }) => {
   return (
