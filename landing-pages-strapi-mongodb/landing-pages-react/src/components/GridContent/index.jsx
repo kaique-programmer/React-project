@@ -1,15 +1,17 @@
 import React from 'react';
 import Props from 'prop-types';
-import SectionBackground from '../SectionBackground';
-import Heading from '../Heading';
-import TextComponent from '../TextComponent';
+import { Heading } from '../Heading';
+import { SectionBackground } from '../SectionBackground';
+import { TextComponent } from '../TextComponent';
 import * as Styled from './styles';
 
 export const GridContent = ({ title, html, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
-        <Heading uppercase colorDark={!background}>{title}</Heading>
+        <Heading uppercase colorDark={!background}>
+          {title}
+        </Heading>
         <Styled.Html>
           <TextComponent>{html}</TextComponent>
         </Styled.Html>
