@@ -5,7 +5,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    html: `<p><a href="https://github.com/kaique-programmer">By Kaique Oliveira</a></p>`,
+    footerHtml: `<p><a href="https://github.com/kaique-programmer">By Kaique Oliveira</a></p>`,
   },
 };
 export const Template = (args) => {
