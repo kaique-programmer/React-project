@@ -1,7 +1,6 @@
 import React from 'react';
 import {Base} from '../Base';
-import {mockBase} from '../Base/stories';
-import * as Styled from './styles';
+import {mockBase} from '../Base/mock';
 
 function Home() {
   return (
