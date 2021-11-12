@@ -8,7 +8,7 @@ import { LogoLink } from '../LogoLink';
 import { NavLinks } from '../NavLinks';
 import * as Styled from './styles';
 
-const Menu = ({ links = [], logoData }) => {
+export const Menu = ({ links = [], logoData }) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -40,5 +40,3 @@ Menu.propTypes = {
   ...NavLinks.propTypes,
   logoData: Props.shape(LogoLink.propTypes).isRequired,
 };
-
-export default Menu;

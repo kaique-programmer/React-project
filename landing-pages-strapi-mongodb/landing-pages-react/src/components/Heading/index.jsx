@@ -2,7 +2,7 @@ import React from 'react';
 import Props from 'prop-types';
 import * as Styled from './styles';
 
-const Heading = ({
+export const Heading = ({
   children,
   colorDark = true,
   as = 'h1',
@@ -28,5 +28,3 @@ Heading.propTypes = {
   size: Props.oneOf(['small', 'medium', 'big', 'huge']),
   uppercase: Props.bool,
 }
-
-export default Heading;

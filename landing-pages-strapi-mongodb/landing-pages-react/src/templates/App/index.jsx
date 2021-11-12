@@ -1,14 +1,11 @@
 import React from 'react';
-import Menu from '../../components/Menu';
+import {Base} from '../Base';
+import {mockBase} from '../Base/stories';
 import * as Styled from './styles';
 
 function Home() {
   return (
-    <div>
-      <Styled.Wrapper>
-        <Menu />
-      </Styled.Wrapper>
-    </div>
+    <Base {...mockBase} />
   );
 }
 

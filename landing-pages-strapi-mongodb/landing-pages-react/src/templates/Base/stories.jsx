@@ -4,18 +4,21 @@ import mock from './mock';
 import { GridText }from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';
 
+export const mockBase = {
+  children: (
+    <>
+      <GridText {...gridMock} />
+      <GridText {...gridMock} />
+      <GridText {...gridMock} />
+    </>
+  ),
+  ...mock,
+}
+
 export default {
   title: 'Templates/Base',
   component: Base,
-  args: {
-    children: (
-      <>
-        <GridText {...gridMock} />
-        <GridText {...gridMock} background />
-      </>
-    ),
-    ...mock,
-  },
+  args: mockBase,
 };
 export const Template = (args) => {
   return (
