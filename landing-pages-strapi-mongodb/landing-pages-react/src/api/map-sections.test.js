@@ -12,6 +12,36 @@ describe('map-sections', () => {
     expect(data).toEqual([]);
   });
 
+  it('should test section with invalid data', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid'
+      }
+    ]);
+
+    const withNoComponent = mapSections([{}]);
+    expect(withNoComponent).toEqual([{}]);
+    expect(withNoTextOrImageGrid).toEqual([
+      {
+        __component: 'section.section-grid'
+      }
+    ]);
+  });
+
+  it('should test section.section-grid with no text_grid or images_grid', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        image_grid: [{}],
+      },
+      {
+        __component: 'section.section-grid',
+        text_grid: [{}],
+      }
+    ]);
+    expect(withNoTextOrImageGrid.length).toBe(2);
+  });
+
   it('should map section two columns', () => {
     const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
