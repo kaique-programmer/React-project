@@ -3,6 +3,7 @@ import { Base } from '../Base';
 import { mockBase } from '../Base/mock';
 import { mapData } from '../../api/map-data';
 import { PageNotFound } from '../PageNotFound';
+import { Loading } from '../Loading';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -22,12 +23,12 @@ function Home() {
     load();
   }, []);
 
-  if(data === undefined) {
+  if (data === undefined) {
     return <PageNotFound />
   }
 
   if (data && !data.slug) {
-    return <h1>Loading</h1>
+    return <Loading />
   }
 
   return (
