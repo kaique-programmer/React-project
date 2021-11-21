@@ -34,4 +34,9 @@ export const GlobalStyles = createGlobalStyle`
   a {
     font-family: ${({ theme }) => theme.colors.secondaryBackground};
   }
+
+  .table {
+    width: 100%;
+    overflow-y: auto;
+  }
 `;
